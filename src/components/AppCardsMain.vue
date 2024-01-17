@@ -619,13 +619,9 @@ export default {
     </section>
 </template>
 <style lang="scss" scoped>
-        body{
-            background-color: rgb(255, 255, 255);
-        }
-
         section{
             background-color: #fbfbfb;
-            width: 100vw;
+            width: 100%;
             height: 100vh;
             font-family: 'Satoshi Black', sans-serif;
         }
@@ -663,7 +659,6 @@ export default {
             margin-top: 20px;
             margin: 0 auto;
         }
-
         .my_card{
             width: 100%;
             border-radius: 10px;
