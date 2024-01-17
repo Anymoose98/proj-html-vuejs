@@ -2,11 +2,13 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import PlayerList from './components/PlayerList.vue'
 export default{
   components:{
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    PlayerList
   }
 }
 </script>
@@ -14,6 +16,7 @@ export default{
 <template>
   <AppHeader />
   <AppMain />
+  <PlayerList />
   <AppFooter />
 </template>
 
