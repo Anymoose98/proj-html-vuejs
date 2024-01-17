@@ -1,17 +1,20 @@
 <script>
+import AppCardsMain from './components/AppCardsMain.vue';
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 export default{
   components:{
     AppHeader,
-    AppMain
-  }
+    AppMain,
+    AppCardsMain
+}
 }
 </script>
 
 <template>
   <AppHeader />
   <AppMain />
+  <AppCardsMain />
 </template>
 
 <style lang="scss">
