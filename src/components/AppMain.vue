@@ -45,7 +45,7 @@ export default {
 
 </template>
 <style lang ="scss" scoped>
-// @use "./../styles/generals.scss" as *;
+@use "./../styles/generals.scss" as *;
 
 .contenainer-squad1 {
     display: flex;
@@ -85,10 +85,9 @@ export default {
 
 .background-matches {
     background-image: url("/saha.jpg");
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // width: 90vw;
-    // height: 1000px
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 </style>
