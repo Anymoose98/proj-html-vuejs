@@ -51,12 +51,15 @@ export default{
 img{
     width: 100%;
     border-radius: 2rem
+    
 }
 .img-card{
     width: 300px;
     position: relative
    
 }
+
+
 
 
 </style>
