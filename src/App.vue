@@ -9,7 +9,9 @@ import AppLogo from './components/AppLogo.vue'
 import CardsListMain from './components/CardsListMain.vue'
 
 export default {
+
   components: {
+
     AppHeader,
     AppMain,
     AppCardsMain,
@@ -18,7 +20,7 @@ export default {
     PlayerList,
     AppFooter,
     CardsListMain
-}
+  }
 }
 
 </script>

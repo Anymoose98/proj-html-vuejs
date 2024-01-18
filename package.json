@@ -18,7 +18,8 @@
     "bootstrap-icons": "^1.11.3",
     "fontawesome": "^5.6.3",
     "sass": "^1.69.7",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
