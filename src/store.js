@@ -81,7 +81,7 @@ export const store = reactive({
     team: [
         {
             name: " Instambul Sports",
-            img: "/league-club-1-png",
+            img: "../../public/league-club-1.png",
             w: "18",
             d: "2",
             l: "0",
@@ -89,7 +89,7 @@ export const store = reactive({
         },
         {
             name: " United Fs Club",
-            img: "/league-club-2-png",
+            img: "../../public/league-club-2.png",
             w: "14",
             d: "2",
             l: "1",
@@ -97,7 +97,7 @@ export const store = reactive({
         },
         {
             name: "Schalke Club",
-            img: "/league-club-3-png",
+            img: "../../public/league-club-3.png",
             w: "13",
             d: "3",
             l: "0",
@@ -105,7 +105,7 @@ export const store = reactive({
         },
         {
             name: "Inter Club",
-            img: "/league-club-4-png",
+            img: "../../public/league-club-4.png",
             w: "13",
             d: "3",
             l: "0",
@@ -113,7 +113,7 @@ export const store = reactive({
         },
         {
             name: "Madrid Club",
-            img: "/league-club-5-png",
+            img: "../../public/league-club-5.png",
             w: "13",
             d: "3",
             l: "0",
@@ -121,7 +121,7 @@ export const store = reactive({
         },
         {
             name: "Schalke Club",
-            img: "/league-club-6-png",
+            img: "../../public/league-club-6.png",
             w: "13",
             d: "3",
             l: "0",
@@ -129,7 +129,7 @@ export const store = reactive({
         },
         {
             name: "Arsenal Club",
-            img: "/league-club-7-png",
+            img: "../../public/league-club-7.png",
             w: "13",
             d: "3",
             l: "0",
@@ -137,7 +137,7 @@ export const store = reactive({
         },
         {
             name: "Bayern Club",
-            img: "/league-club-8-png",
+            img: "../../public/league-club-8.png",
             w: "13",
             d: "3",
             l: "0",
