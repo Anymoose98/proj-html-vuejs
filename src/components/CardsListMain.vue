@@ -10,7 +10,66 @@ export default {
     return {
       store,
     };
+  }, methods: {
+    scrollToSection(sectionId) {
+
+      var section = document.getElementById(sectionId);
+      var content = document.querySelector('.content');
+
+
+      content.scrollLeft = 0;
+      var offset = 20;
+      section.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'start', inline: 'nearest', block: 'nearest', offset: { top: offset, left: 0 } });
+
+
+      switch (sectionId) {
+        case "1":
+          document.querySelectorAll(".slider-btn").forEach(btn => {
+            btn.style.backgroundColor = '#000000a2';
+            btn.style.width = '50px';
+
+          });
+          document.getElementById("firstBtn").style.backgroundColor = 'black';
+          document.getElementById("firstBtn").style.width = '100px';
+
+          break;
+        case "5":
+          document.querySelectorAll(".slider-btn").forEach(btn => {
+            btn.style.backgroundColor = '#000000a2';
+            btn.style.width = '50px';
+
+          });
+          document.getElementById("secondBtn").style.backgroundColor = 'black';
+          document.getElementById("secondBtn").style.width = '100px';
+
+          break;
+        case "6":
+          document.querySelectorAll(".slider-btn").forEach(btn => {
+            btn.style.backgroundColor = '#000000a2';
+            btn.style.width = '50px';
+
+          });
+          document.getElementById("thirdBtn").style.backgroundColor = 'black';
+          document.getElementById("thirdBtn").style.width = '100px';
+
+          break;
+        case "7":
+          document.querySelectorAll(".slider-btn").forEach(btn => {
+            btn.style.backgroundColor = '#000000a2';
+            btn.style.width = '50px';
+
+          });
+          document.getElementById("fourthBtn").style.backgroundColor = 'black';
+          document.getElementById("fourthBtn").style.width = '100px';
+
+          break;
+
+      }
+
+    },
   },
+
+
 };
 </script>
 <template lang="">
@@ -33,21 +92,23 @@ export default {
       <div class="container-fluid">
         <div class="row">
           <div class="content">
+            <div class="cards-wrapper">
             <AppCardsMain
               v-for="(card, index) in store.cards"
               :key="index"
               :card="card"
             />
           </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="slider-btn-container">
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
-      <div class="slider-btn"></div>
+      <div class="slider-btn" id="firstBtn" @click="scrollToSection('1')"></div>
+      <div class="slider-btn" id="secondBtn" @click="scrollToSection('5')"></div>
+      <div class="slider-btn" id="thirdBtn" @click="scrollToSection('6')"></div>
+      <div class="slider-btn" id="fourthBtn" @click="scrollToSection('7')"></div>
     </div>
   </section>
 </template>
@@ -57,9 +118,10 @@ section {
   width: 100%;
   height: 120vh;
   font-family: "Satoshi Black", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 
-  .slider-btn-container{
+
+  .slider-btn-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -67,22 +129,29 @@ section {
 
     .slider-btn {
       border-radius: 100px;
-    width: 60px;
-    height: 10px;
-    background-color: rgba(0, 0, 0, 0.635);
-    margin-right: 10px;
+      width: 60px;
+      height: 10px;
+      background-color: #000000a2;
+      margin-right: 10px;
+      transition-duration: 0.5s;
 
-    &:hover{
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+      }
     }
-  }
   }
 
   .content {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
     overflow-y: hidden;
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
   }
 
   .reccomanded {
@@ -100,6 +169,7 @@ section {
       color: white;
     }
   }
+
   .title_section {
     display: flex;
     flex-direction: column;
