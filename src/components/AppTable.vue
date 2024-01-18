@@ -132,7 +132,7 @@ export default {
 }
 
 .img-league-club{
-    width: 50px;
+    width: 46px;
 }
 
 .pad-td {
