@@ -86,8 +86,6 @@ export default {
     border-color: black;
 }
 
-
-
 .background-matches {
     background-image: url("/saha.jpg");
     background-size: cover;
