@@ -3,6 +3,7 @@ import AppCardsMain from './components/AppCardsMain.vue'
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import PlayerList from './components/PlayerList.vue'
 import AppTable from './components/AppTable.vue'
 import AppLogo from './components/AppLogo.vue'
 
@@ -14,8 +15,10 @@ export default {
     AppFooter,
     AppTable,
     AppLogo,
-  },
+    PlayerList,
+  }
 }
+
 </script>
 
 <template>
@@ -24,6 +27,7 @@ export default {
   <AppTable />
   <AppLogo />
   <AppCardsMain />
+  <PlayerList />
   <AppFooter />
 </template>
 
