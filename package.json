@@ -16,7 +16,11 @@
     "@fortawesome/vue-fontawesome": "^3.0.5",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.3",
+<<<<<<< HEAD
     "fontawesome": "^5.6.3",
+=======
+    "sass": "^1.69.7",
+>>>>>>> bb177adae4ce5beda9644d80b5b70b4fc57d8a68
     "vue": "^3.3.11"
   },
   "devDependencies": {

@@ -1,6 +1,11 @@
 <script>
-export default{
-    
+import AppMatches from './AppMatches.vue';
+
+export default {
+    components: {
+        AppMatches,
+    }
+
 }
 </script>
 <template lang="">
@@ -31,40 +36,63 @@ export default{
             <button class="btn"><strong>View Match Details</strong></button>
         </div>
     </div>
+</div>
 
-  </div>
+<div class="background-matches my-5">
+    <AppMatches />
+</div>
+
+
 </template>
 <style lang ="scss" scoped>
-@use "./../styles/generals.scss" as *; 
-.contenainer-squad1{
+@use "./../styles/generals.scss" as *;
+
+
+
+.contenainer-squad1 {
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.container-squad2{
+
+
+.container-squad2 {
     display: flex;
     align-items: center;
     justify-content: start;
 }
-.flex-align{
+
+
+.flex-align {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.partita{
+
+.partita {
     margin-right: 20px;
 }
-.btn{
+
+.btn {
     color: white;
     padding: 20px;
     border-color: white;
     border-radius: 3rem;
     margin-top: 30px;
-    
-        background-color: black;
+    background-color: black;
 }
 
-.btn:hover{
+.btn:hover {
     border-color: black;
+}
+
+
+
+.background-matches {
+    background-image: url("/saha.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 </style>
