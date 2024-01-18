@@ -12,10 +12,10 @@ export default {
     AppHeader,
     AppMain,
     AppCardsMain,
-    AppFooter,
     AppTable,
     AppLogo,
     PlayerList,
+    AppFooter,
   }
 }
 
@@ -24,10 +24,10 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
+  <PlayerList />
   <AppTable />
   <AppLogo />
   <AppCardsMain />
-  <PlayerList />
   <AppFooter />
 </template>
 
