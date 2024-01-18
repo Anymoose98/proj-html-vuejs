@@ -4,12 +4,30 @@ export default {
     data() {
         return {
             store,
+            numeroCasuale: "",
+            numeroCasuale2: ""
         };
     },
     methods: {
         generaNumeroCasuale() {
-            return Math.floor(Math.random() * 9);
+            this.numeroCasuale = ""
+            this.numeroCasuale = Math.floor(Math.random() * 9);
+            return this.numeroCasuale
+
+
+
+        },
+        generaNumeroCasuale2() {
+            this.numeroCasuale2 = ""
+            this.numeroCasuale2 = Math.floor(Math.random() * 9);
+            if (this.numeroCasuale == this.numeroCasuale2) {
+                this.numeroCasuale2 = ""
+                this.numeroCasuale2 = Math.floor(Math.random() * 9);
+            }
+            return this.numeroCasuale2
+
         }
+
     },
 }
 </script>
@@ -27,15 +45,15 @@ export default {
             <div v-for="index in 5" :key="index">
                 <div class="col-12 white d-flex align-items-center bg-nero mt-4" >
                     <div class="col-5 d-flex align-items-center justify-content-end">
-                        <img :src=store.team[index].img :alt=store.team[index].name>
-                        <h2>{{store.team[index].name}}</h2>
+                        <img :src=store.team[generaNumeroCasuale()].img :alt=store.team[this.numeroCasuale].name>
+                        <h2>{{store.team[this.numeroCasuale].name}}</h2>
                     </div>
                     <div class="col-2 text-center">
                         <h1>VS</h1>
                     </div>
                     <div class="col-5 d-flex align-items-center">
-                        <h2>{{store.team[generaNumeroCasuale()].name}}</h2>
-                        <img :src=store.team[generaNumeroCasuale()].img :alt=store.team[generaNumeroCasuale()].name>
+                        <h2>{{store.team[generaNumeroCasuale2()].name}}</h2>
+                        <img :src=store.team[(this.numeroCasuale2)].img :alt=store.team[this.numeroCasuale2].name>
                     </div>
                 </div>
                 <div class="col-12 bg-nero-scuro white p-1 d-flex align-items-center ">
