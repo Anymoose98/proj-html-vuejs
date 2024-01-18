@@ -1,69 +1,69 @@
 <script>
 import { store } from "../store.js"
-export default{
-    data(){
-      return{
-        store,
-        activeImage: 0,
+export default {
+    data() {
+        return {
+            store,
+            activeImage: 0,
             isAutoPlayActive: false,
             autoplay: null,
-             slides: [
-                    {
-                        image: '/slider1-1.jpg',
-                        title1: 'Welcome To ',
-                        title2: 'Football Club',
-                        text: 'Live match fix type and result',
-                    }, {
-                        image: '/slider2-1.jpg',
-                        title1: 'Football Club',
-                        title2: ' Sport Club',
-                        text: 'Private football matches',
-                    }, {
-                        image: '/slider3.jpg',
-                        title1: 'Professional Football ',
-                        title2: ' Football Club',
-                        text: "Football is the poetry of movement",
-                    }, 
-                     {
-                        image: '/slider4.jpg',
-                        title1: 'Football Club',
-                        title2: ' Sport Club',
-                        text: "Football is a head game",
-                    },
-                ]
+            slides: [
+                {
+                    image: '/slider1-1.jpg',
+                    title1: 'Welcome To ',
+                    title2: 'Football Club',
+                    text: 'Live match fix type and result',
+                }, {
+                    image: '/slider2-1.jpg',
+                    title1: 'Football Club',
+                    title2: ' Sport Club',
+                    text: 'Private football matches',
+                }, {
+                    image: '/slider3.jpg',
+                    title1: 'Professional Football ',
+                    title2: ' Football Club',
+                    text: "Football is the poetry of movement",
+                },
+                {
+                    image: '/slider4.jpg',
+                    title1: 'Football Club',
+                    title2: ' Sport Club',
+                    text: "Football is a head game",
+                },
+            ]
         }
     },
-    methods:{
-        nextImg(){
-            if(this.activeImage == this.slides.length - 1){
+    methods: {
+        nextImg() {
+            if (this.activeImage == this.slides.length - 1) {
                 this.activeImage = 0;
-            }else{
+            } else {
                 this.activeImage++;
             }
         },
-        prevImg(){
-            if( this.activeImage == 0){
+        prevImg() {
+            if (this.activeImage == 0) {
                 this.activeImage = this.slides.length - 1
-            }else{
+            } else {
                 this.activeImage--;
             }
         },
-        setImg(index){
+        setImg(index) {
             this.activeImage = index
-         },
-        startAutoPlay(){
+        },
+        startAutoPlay() {
             this.isAutoPlayActive = true;
             this.autoplay = setInterval(() => {
                 this.nextImg()
-            },3000)
+            }, 3000)
 
-            }   
-        },
-        created(){
-            this.startAutoPlay()
         }
-      }
-    
+    },
+    created() {
+        this.startAutoPlay()
+    }
+}
+
 
 </script>
 <template lang="">
@@ -102,9 +102,9 @@ export default{
     <div class="container">
         <div class="row">
             <div class="col-12 content">
-                <h1>{{ slides[activeImage].title1 }}</h1>
-                <h1>{{ slides[activeImage].title2 }}</h1>
-                <h4>{{ slides[activeImage].text }}</h4>
+                <h1 >{{ slides[activeImage].title1 }}</h1>
+                <h1 >{{ slides[activeImage].title2 }}</h1>
+                <h4 >{{ slides[activeImage].text }}</h4>
                 <button class="btn next" @click="nextImg">< </button>
                 <button class="btn prev" @click="prevImg"> ></button>
                 <button class="btn"><strong>Learn More →</strong></button>
@@ -115,110 +115,126 @@ export default{
 </template>
 <style lang ="scss" scoped>
 @use "./../styles/generals.scss";
-.sfondo{
-  position:relative
- 
+
+.sfondo {
+    position: relative;
+    width: 100%;
 }
-.header-black{
+
+.header-black {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%
- 
 }
-i{
+
+i {
     color: white;
     width: 20px
 }
-.icons-list{
+
+.icons-list {
     display: flex;
     justify-content: end;
     color: white;
     gap: 20px
 }
-.col-3{
+
+.col-3 {
     margin-top: 40px
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
 }
-ul{
-    display: flex   ;
+
+ul {
+    display: flex;
     flex-direction: row;
     gap: 20px
 }
-li{
+
+li {
     list-style-type: none;
 }
-.col-12{
+
+.col-12 {
     display: flex;
     justify-content: center;
-    ul{
+
+    ul {
         text-transform: uppercase;
-        
+
     }
-    li{
+
+    li {
         color: white;
         font-size: 20px;
         margin: 30px;
     }
 }
-.content{
+
+.content {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-    height: calc(900px - 250px );
+    height: calc(900px - 250px);
     position: absolute;
     top: 30%;
     left: 0%
-    
 }
-a{
-        text-decoration: none;
-            color: white;
-    }
-h1{
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
     margin: 20px;
     font-size: 70px;
 }
 
-.btn{
+.btn {
     color: white;
     padding: 20px;
     border-color: white;
     border-radius: 3rem;
     margin-top: 30px;
-    &:hover{
+
+    &:hover {
         background-color: white;
         color: black
     }
 }
-.btn:hover{
+
+.btn:hover {
     border-color: white;
 }
-.list-nav:after{
-  position:absolute;
-  width:0;
-  display:block;
-  content:'';
-  transition: width 0.5s ease-in-out;
+
+.list-nav:after {
+    position: absolute;
+    width: 0;
+    display: block;
+    content: '';
+    transition: width 0.5s ease-in-out;
 }
 
-.list-nav:hover:after{
+.list-nav:hover:after {
     position: relative;
     border-bottom: 2px solid white;
     width: 100%;
 }
 
-.text{
+.text {
     position: absolute;
     top: 30%;
     left: 0%
 }
+
 .item {
     float: left;
     width: 700px;
@@ -227,15 +243,17 @@ h1{
 }
 
 
-.prev, .next{
-    position:absolute;
+.prev,
+.next {
+    position: absolute;
 
 }
-.prev{
-    right:0%
+
+.prev {
+    right: 0%
 }
-.next{
+
+.next {
     left: 0%
 }
-
 </style>
