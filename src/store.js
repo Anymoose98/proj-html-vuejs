@@ -53,39 +53,75 @@ export const store = reactive({
     team: [
         {
             name: " Instambul Sports",
-            img: "/league-club-1-png"
+            img: "/league-club-1-png",
+            w: "18",
+            d: "2",
+            l: "0",
+            pts: "42"
         },
         {
             name: " United Fs Club",
-            img: "/league-club-2-png"
+            img: "/league-club-2-png",
+            w: "14",
+            d: "2",
+            l: "1",
+            pts: "35",
         },
         {
             name: "Schalke Club",
-            img: "/league-club-3-png"
+            img: "/league-club-3-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Inter Club",
-            img: "/league-club-4-png"
+            img: "/league-club-4-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Madrid Club",
-            img: "/league-club-5-png"
+            img: "/league-club-5-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Schalke Club",
-            img: "/league-club-6-png"
+            img: "/league-club-6-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Arsenal Club",
-            img: "/league-club-7-png"
+            img: "/league-club-7-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Bayern Club",
-            img: "/league-club-8-png"
+            img: "/league-club-8-png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         },
         {
             name: "Atletico Club",
-            img: "/leage-club-9.png"
+            img: "/leage-club-9.png",
+            w: "13",
+            d: "3",
+            l: "0",
+            pts: "32",
         }
     ],
 })
