@@ -602,7 +602,8 @@ export default {
 };
 </script>
 <template lang="">
-  <section>
+
+    <div class="col-3 p-2" data-tilt>
     <div class="content_single_card">
       <div class="my_card">
         <div class="card_photo">
@@ -622,7 +623,7 @@ export default {
         </div>
       </div>
     </div>
-  </section>
+</div>
 </template>
 <style lang="scss" scoped>
 body {
