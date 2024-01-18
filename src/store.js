@@ -84,21 +84,21 @@ export const store = reactive({
             date: "29.95.2022 - Football",
             title: "Football Terms",
             description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
-            img: '../../news4-1-150x150.png',
+            img: '../../news6-1-150x150.png',
             id: '5'
         },
         {
             date: "29.95.2022 - Football",
             title: "Football Terms",
             description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
-            img: '../../news4-1-150x150.png',
+            img: '../../news1-1-150x150.png',
             id: '6'
         },
         {
             date: "29.95.2022 - Football",
             title: "Football Terms",
             description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
-            img: '../../news4-1-150x150.png',
+            img: '../../news3-1-150x150.png',
             id: '7'
         }
     ],
