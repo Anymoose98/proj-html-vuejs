@@ -56,25 +56,36 @@ export const store = reactive({
             date: "29.95.2022 - Football",
             title: "What is Football?",
             description: "Football is a sport that is known as a ball game and is loved by [...]",
-            img: '../../news1-1-150x150.png'
+            img: '../../news1-1-150x150.png',
+            id: '1'
         },
         {
             date: "29.95.2022 - Football",
             title: "Football Rules",
             description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
-            img: '../../news3-1-150x150.png'
+            img: '../../news3-1-150x150.png',
+            id: '2'
         },
         {
             date: "29.95.2022 - Football",
             title: "Football Features",
             description: "Football; It is an aerobic-based anaerobic sport in which jumps, kicks, turns, running with changing […]",
-            img: '../../news2-1-150x150.png'
+            img: '../../news2-1-150x150.png',
+            id: '3'
         },
         {
             date: "29.95.2022 - Football",
             title: "Football Terms",
             description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
-            img: '../../news4-1-150x150.png'
+            img: '../../news4-1-150x150.png',
+            id: '4'
+        },
+        {
+            date: "29.95.2022 - Football",
+            title: "Football Terms",
+            description: "GOLDEN GOAL: In a football match, the goal scored by one of the teams in […]",
+            img: '../../news4-1-150x150.png',
+            id: '5'
         }
     ],
 
