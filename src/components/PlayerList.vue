@@ -1,13 +1,13 @@
 <script>
 import { store } from "../store.js"
 import Players from "./Players.vue"
-export default{
-    name:"PlayerList",
+export default {
+    name: "PlayerList",
     components: {
         Players
     },
-    data(){
-        return{
+    data() {
+        return {
             store
         }
     }
@@ -34,36 +34,43 @@ export default{
 </template>
 <style lang ="scss" scoped>
 @use '../styles/generals.scss' as *;
-.container-cards{
+
+.container-cards {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 2rem;
 }
-.img-sfondo{
+
+.img-sfondo {
     background-image: url("/player.jpg");
-   
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+
 }
-.col-12{
+
+.col-12 {
     text-align: center;
-    h1{
+
+    h1 {
         color: white;
         margin-top: 30px;
     }
 }
-.btn{
+
+.btn {
     color: white;
     padding: 20px;
     background-color: black;
     border-radius: 3rem;
     margin: 30px 0px;
     border-color: white;
-    
-    }
-    .btn:hover{
-        background-color: black;
-        border-color: white;
-        color: white;
-    }
 
-</style>
+}
+
+.btn:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+}</style>
