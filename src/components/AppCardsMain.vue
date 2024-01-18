@@ -602,7 +602,7 @@ export default {
 </script>
 <template lang="">
   <div class="col-3 p-2" data-tilt>
-    <div class="content_single_card">
+    <div class="content_single_card" :id='card.id'>
       <div class="my_card">
         <div class="card_photo">
           <div class="photo_container">
