@@ -287,12 +287,12 @@ export default {
                 this.left +
                 ((this.settings.startX + this.settings.max) /
                   (2 * this.settings.max)) *
-                  this.width,
+                this.width,
               clientY:
                 this.top +
                 ((this.settings.startY + this.settings.max) /
                   (2 * this.settings.max)) *
-                  this.height,
+                this.height,
             };
           }
 
@@ -381,9 +381,8 @@ export default {
 
           if (this.glare) {
             this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
-            this.glareElement.style.opacity = `${
-              (values.percentageY * this.settings["max-glare"]) / 100
-            }`;
+            this.glareElement.style.opacity = `${(values.percentageY * this.settings["max-glare"]) / 100
+              }`;
           }
 
           this.element.dispatchEvent(
@@ -630,12 +629,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-section {
-  background-color: #fbfbfb;
-  width: 100vw;
-  height: 100vh;
-  font-family: "Satoshi Black", sans-serif;
-}
+
 .reccomanded {
   background-color: black;
   width: 105px;
@@ -646,6 +640,14 @@ section {
   align-self: center;
   justify-content: center;
 }
+
+section {
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Satoshi Black', sans-serif;
+}
+
 
 .title_section {
   display: flex;
