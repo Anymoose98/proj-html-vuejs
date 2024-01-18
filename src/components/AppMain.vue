@@ -60,8 +60,7 @@ export default{
     border-color: white;
     border-radius: 3rem;
     margin-top: 30px;
-    
-        background-color: black;
+    background-color: black;
 }
 
 .btn:hover{
