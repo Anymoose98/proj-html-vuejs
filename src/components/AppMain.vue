@@ -38,7 +38,7 @@ export default {
     </div>
 </div>
 
-<div class="background-matches my-5">
+<div class="background-matches my-5 mb-0">
     <AppMatches />
 </div>
 
