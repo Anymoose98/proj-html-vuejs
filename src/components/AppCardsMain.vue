@@ -601,13 +601,12 @@ export default {
 };
 </script>
 <template lang="">
-
-    <div class="col-3 p-2" data-tilt>
+  <div class="col-3 p-2" data-tilt>
     <div class="content_single_card">
       <div class="my_card">
         <div class="card_photo">
           <div class="photo_container">
-            <img class="card_img" src="../../news1-1-150x150.png" alt="" />
+            <img class="card_img" :src="card.img" alt="" />
             <!-- TODO: Aggiungere alt -->
           </div>
           <div class="date_title">{{ card.date }}</div>
@@ -622,7 +621,7 @@ export default {
         </div>
       </div>
     </div>
-</div>
+  </div>
 </template>
 <style lang="scss" scoped>
 body {
@@ -687,57 +686,52 @@ h2 {
   text-align: center;
   padding: 50px 10px;
   margin-top: 20px;
-}
 
-.card_info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .photo_container {
+    width: 223px;
 
-.photo_container {
-  width: 223px;
-}
+    .card_img {
+      width: 100%;
+    }
 
-.button_more {
-  width: 100px;
-  background-color: black;
-  color: white;
-  border-radius: 100px;
-  font-size: 18px;
-  padding: 20px 70px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -25px;
-}
+    .date_title {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Satoshi Regular", sans-serif;
+    }
+  }
 
-.card_img {
-  width: 100%;
-}
+  .card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.date_title {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Satoshi Regular", sans-serif;
-}
+    .card_descr {
+      padding: 0 20px;
+      font-size: 18px;
+      font-family: "Satoshi Regular", sans-serif;
+      font-weight: 100;
+      text-align: left;
+      margin-bottom: 30px;
+    }
 
-.card_title {
-  font-size: 23px;
-  font-family: "Satoshi Black", sans-serif;
-  font-weight: 900;
-}
+    .button_more {
+      width: 100px;
+      background-color: black;
+      color: white;
+      border-radius: 100px;
+      font-size: 18px;
+      padding: 20px 70px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -25px;
+    }
 
-.card_descr {
-  padding: 0 20px;
-  font-size: 18px;
-  font-family: "Satoshi Regular", sans-serif;
-  font-weight: 100;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.reccomanded img {
-  width: 90%;
-  color: white;
+    .card_title {
+      font-size: 23px;
+      font-family: "Satoshi Black", sans-serif;
+      font-weight: 900;
+    }
+  }
 }
 </style>
