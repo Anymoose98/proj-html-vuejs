@@ -182,4 +182,15 @@ export default {
 i {
     color: white;
 }
+img {
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 4em white);
+}
+
+
 </style>
