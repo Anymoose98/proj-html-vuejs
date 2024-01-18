@@ -6,6 +6,7 @@ import AppFooter from './components/AppFooter.vue'
 import PlayerList from './components/PlayerList.vue'
 import AppTable from './components/AppTable.vue'
 import AppLogo from './components/AppLogo.vue'
+import CardsListMain from './components/CardsListMain.vue'
 
 export default {
   components: {
@@ -16,7 +17,8 @@ export default {
     AppLogo,
     PlayerList,
     AppFooter,
-  }
+    CardsListMain
+}
 }
 
 </script>
@@ -27,7 +29,7 @@ export default {
   <PlayerList />
   <AppTable />
   <AppLogo />
-  <AppCardsMain />
+  <CardsListMain />
   <AppFooter />
 </template>
 
