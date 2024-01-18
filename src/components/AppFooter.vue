@@ -30,7 +30,7 @@ export default {
         <h1> Join Our Newsletter</h1>
         <h6>Subscribe to be informed about important developments in our club and football world</h6>
         <input type="text" class="form-control p-3 bordo-3" placeholder="Insert your email">
-        <button class="btn form-control mt-1 p-3 bordo-3">Subscribe →</button>
+        <button class="btn btn-light form-control mt-1 p-3 bordo-3">Subscribe →</button>
     </div>
     <div class="col-2 mx-3">
         <h1>Education</h1>
