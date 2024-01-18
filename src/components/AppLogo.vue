@@ -15,7 +15,7 @@ export default {
 
 <!-- SEZIONE HTML -->
 <template lang="">
-  <div class="container-fluid back-dark mb-4">
+  <div class="container-fluid back-dark">
     <div class="container">
         <div class="row">
             <div class="col-2 py-5">

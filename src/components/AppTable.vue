@@ -109,7 +109,7 @@ export default {
             </div>
             <div class="col-6">
                 <h3 class="text-center fw-bold pb-2">Fixtures & Results</h3>
-                <table class="table table-borderless table-league-2 align-middle mb-0">
+                <table class="table table-borderless table-striped table-results align-middle mb-0">
                         <tbody>
                             <tr class="my-bg-gray">
                                 <td colspan="2" class="pad-td text-end"><img class="img-club" src="../../public/club-1.png" alt=""> Instambul Sports</td>
@@ -176,7 +176,7 @@ export default {
     border: 1px solid lightgray;
 }
 
-.table-league-2 {
+.table-results, .table-league {
     margin: 0 auto;
 }
 
