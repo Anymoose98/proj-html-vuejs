@@ -145,7 +145,7 @@ export const store = reactive({
         },
         {
             name: "Atletico Club",
-            img: "/leage-club-9.png",
+            img: "/league-club-9.png",
             w: "13",
             d: "3",
             l: "0",

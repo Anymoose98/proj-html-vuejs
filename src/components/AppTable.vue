@@ -18,6 +18,7 @@ export default {
   <div class="container mt-5">
     <div class="container">
         <div class="row">
+            <!-- LEAGUE TABLE -->
             <div class="col-6">
                 <h3 class="text-center fw-bold pb-2">League Table</h3>
                 <table class="table table-borderless table-light table-league align-middle mb-0">
@@ -31,82 +32,19 @@ export default {
                         </tr>
                     </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td><img class="img-club" src="../../public/club-1.png" alt=""> Instambul Sports</td>
-                                <td class="px-0 text-center">18</td>
-                                <td class="px-0 text-center">2</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">42</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td><img class="img-club" src="../../public/club-2.png" alt=""> United Fs Club</td>
-                                <td class="px-0 text-center">14</td>
-                                <td class="px-0 text-center">2</td>
-                                <td class="px-0 text-center">1</td>
-                                <td class="px-0 text-center">35</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td><img class="img-club" src="../../public/club-3.png" alt=""> Schalke Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td><img class="img-club" src="../../public/club-4.png" alt=""> Inter Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td><img class="img-club" src="../../public/league-club-5.png" alt=""> Madrid Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td><img class="img-club" src="../../public/club-6.png" alt=""> Schalke Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td><img class="img-club" src="../../public/club-7.png" alt=""> Arsenal Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td><img class="img-club" src="../../public/club-8.png" alt=""> Bayern Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td><img class="img-club" src="../../public/club-9.png" alt=""> Atletico Club</td>
-                                <td class="px-0 text-center">13</td>
-                                <td class="px-0 text-center">3</td>
-                                <td class="px-0 text-center">0</td>
-                                <td class="px-0 text-center">32</td>
+                            <tr v-for="(squad, index) in store.team" :key="index">
+                                <th scope="row"> {{ index + 1 }} </th>
+                                <td><img class="img-league-club" :src="squad.img" :alt="squad.name"> {{ squad.name }}</td>
+                                <td class="px-0 text-center">{{ squad.w }}</td>
+                                <td class="px-0 text-center">{{ squad.d }}</td>
+                                <td class="px-0 text-center">{{ squad.l }}</td>
+                                <td class="px-0 text-center">{{ squad.pts }}</td>
                             </tr>
                         </tbody>
                 </table>
                 <button type="button" class="btn btn-dark w-100 py-4">View Full League Table</button>
             </div>
+            <!-- FIXTURES & RESULTS TABLE -->
             <div class="col-6">
                 <h3 class="text-center fw-bold pb-2">Fixtures & Results</h3>
                 <table class="table table-borderless table-striped table-results align-middle mb-0">
@@ -160,8 +98,9 @@ export default {
                 </table>
                 <button type="button" class="btn btn-dark w-100 py-4">View Full Fixtures</button>
             </div>
+            <!-- IMG 20% -->
             <div class="col-12">
-                <img class="img-fluid py-5" src="../../public/reklam.jpg" alt="">
+                <img class="img-fluid py-5" src="../../public/sconto.jpg" alt="">
             </div>
         </div>
     </div>
@@ -190,6 +129,10 @@ export default {
 
 .img-club {
     width: 41px;
+}
+
+.img-league-club{
+    width: 50px;
 }
 
 .pad-td {
