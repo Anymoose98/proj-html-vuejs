@@ -58,7 +58,12 @@ export default{
     border-radius: 3rem;
     margin: 30px 0px;
     border-color: white;
-  
+    
+    }
+    .btn:hover{
+        background-color: black;
+        border-color: white;
+        color: white;
     }
 
 </style>
