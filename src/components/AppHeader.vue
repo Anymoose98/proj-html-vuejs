@@ -76,14 +76,14 @@ export default {
     <div class="header-black">
         <div class="container">
             <div class="row">
-                <div class="col-3 ">
+                <div class="col-4 mar-top icons-list">
                     <a href="/"><img src="/sponsor1.png" alt="sponsor"></a>
                     <a href="/"><img src="/sponsor2.png" alt="sponsor"></a>
                 </div>
-                <div class="col-5 p-3 logo">
+                <div class="col-4 p-3 logo">
                     <a href="/"><img src="/logo-football.png" alt=""></a>
                 </div>
-                <div class="col-3 icons-list">
+                <div class="col-4 mar-top icons-list">
                     <ul>
                         <li><a href="/"><i class="bi bi-facebook h1"></i></a></li>
                         <li><a href="/"><i class="bi bi-instagram h1"></i></a></li>
@@ -119,6 +119,7 @@ export default {
 .sfondo {
     position: relative;
     width: 100%;
+    height: 900px;
 }
 
 .header-black {
@@ -136,15 +137,16 @@ i {
 
 .icons-list {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     color: white;
     gap: 20px
 }
 
-.col-3 {
-    margin-top: 40px
-}
 
+.mar-top{
+    margin-top: 40px
+
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -163,6 +165,8 @@ li {
 .col-12 {
     display: flex;
     justify-content: center;
+    margin-bottom: -25px;
+    margin-top: 20px;
 
     ul {
         text-transform: uppercase;
@@ -184,7 +188,7 @@ li {
     color: white;
     height: calc(900px - 250px);
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 0%
 }
 
@@ -245,7 +249,12 @@ h1 {
 
 .prev,
 .next {
+
     position: absolute;
+    border: 2px solid white;
+    border-radius: 3rem;
+    font-size: 23px;
+    padding: 10px 20px
 
 }
 

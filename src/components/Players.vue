@@ -13,6 +13,7 @@ export default{
 </script>
 <template lang="">
          <div class="col-3 py-5">
+            
              <div class=" img-card testo-all">
                  <img :src="Player.image" alt="">
                  <div class="sfondo-nero">
