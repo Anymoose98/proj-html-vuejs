@@ -10,7 +10,7 @@ export default {
 </script>
 <template lang="">
   <div class="container">
-    <div class="row mt-4">
+    <div class="row mt-5">
         <div class="col-5">
             <div class="contenainer-squad1">
                 <h2>Instanbul Sports</h2>
@@ -28,9 +28,9 @@ export default {
 
             </div>
         </div>
-        <div class="col-12 flex-align">
-            <h5 class="partita"> <i class="bi bi-calendar3"></i>May 21, 2022 18:05 pm </h5 >
-            <h5 > <i class="bi bi-plus-circle"></i>Expert Stadium</h5 >
+        <div class="col-12 flex-align mt-3">
+            <h5 class="partita"> <i class="bi bi-calendar3 mx-2"></i>May 21, 2022 18:05 pm </h5 >
+            <h5 > <i class="bi bi-plus-circle mx-2"></i>Expert Stadium</h5 >
         </div>
         <div class="col-12 flex-align">
             <button class="btn"><strong>View Match Details</strong></button>
@@ -55,6 +55,10 @@ export default {
     justify-content: end;
 }
 
+h2 {
+    font-weight: 700;
+}
+
 .scritta-vs {
     font-size: 80px;
     font-weight: 700;
@@ -66,6 +70,9 @@ export default {
     justify-content: start;
 }
 
+h5 {
+    font-weight: 600;
+}
 
 .flex-align {
     display: flex;
@@ -80,8 +87,10 @@ export default {
 .btn {
     color: white;
     padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-color: white;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     margin-top: 30px;
     background-color: black;
 }
