@@ -67,59 +67,71 @@ export default {
 
 </script>
 <template lang="">
-  <div>
+
     <img :src="slides[activeImage].image" class="sfondo"  alt="Spiderman" />      
         <div class="container-arrows">
             <div class="prev" @click="prevImg"></div>
             <div class="next" @click="nextImg"></div>         
         </div>
-    <div class="header-black">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 mar-top icons-list">
-                    <a href="/"><img src="/sponsor1.png" alt="sponsor"></a>
-                    <a href="/"><img src="/sponsor2.png" alt="sponsor"></a>
-                </div>
-                <div class="col-4 p-3 logo">
-                    <a href="/"><img src="/logo-football.png" alt=""></a>
-                </div>
-                <div class="col-4 mar-top icons-list">
-                    <ul>
-                        <li><a href="/"><i class="bi bi-facebook h1"></i></a></li>
-                        <li><a href="/"><i class="bi bi-instagram h1"></i></a></li>
-                        <li><a href="/"><i class="bi bi-twitter h1"></i></a></li>
-                    </ul>     
-                </div>
-                <div class="col-12">
+        <div class="font-700">
 
-                    <ul class="mt-4">
-                        <li class="list-nav" v-for="(lista, index) in store.navbar" :key="index"> <a href="/"> {{ lista.link }}</a></li>
-                    </ul>
+            <div class="header-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 mar-top icons-list">
+                            <a href="/"><img src="/sponsor1.png" alt="sponsor"></a>
+                            <a href="/"><img src="/sponsor2.png" alt="sponsor"></a>
+                        </div>
+                        <div class="col-4 p-3 logo">
+                            <a href="/"><img src="/logo-football.png" alt=""></a>
+                        </div>
+                        <div class="col-4 mar-top icons-list">
+                            <ul>
+                                <li><a href="/"><i class="bi bi-facebook h1"></i></a></li>
+                                <li><a href="/"><i class="bi bi-instagram h1"></i></a></li>
+                                <li><a href="/"><i class="bi bi-twitter h1"></i></a></li>
+                            </ul>     
+                        </div>
+                        <div class="col-12">
+        
+                            <ul class="mt-4">
+                                <li class="list-nav" v-for="(lista, index) in store.navbar" :key="index"> <a href="/"> {{ lista.link }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 content">
+                        <h1 class="font-700" >{{ slides[activeImage].title1 }}</h1>
+                        <h1 class="font-700 marg-top">{{ slides[activeImage].title2 }}</h1>
+                        <h4 class="font-700">{{ slides[activeImage].text }}</h4>
+                        <button class="btn next" @click="nextImg">< </button>
+                        <button class="btn prev" @click="prevImg"> ></button>
+                        <button class="btn largo font-700">Learn More →</button>
+                    </div>
+                </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 content">
-                <h1 >{{ slides[activeImage].title1 }}</h1>
-                <h1 >{{ slides[activeImage].title2 }}</h1>
-                <h4 >{{ slides[activeImage].text }}</h4>
-                <button class="btn next" @click="nextImg">< </button>
-                <button class="btn prev" @click="prevImg"> ></button>
-                <button class="btn"><strong>Learn More →</strong></button>
-            </div>
-        </div>
-    </div>
-  </div>
+
 </template>
 <style lang ="scss" scoped>
 @use "./../styles/generals.scss";
-
+.font-700{
+    font-weight: 700;
+}
+.marg-top{
+    margin-top: -15px
+}
 .sfondo {
     position: relative;
     width: 100%;
     height: 900px;
+}
+.largo{
+    padding: 20px 50px !important
+
 }
 
 .header-black {
@@ -139,7 +151,7 @@ i {
     display: flex;
     justify-content: center;
     color: white;
-    gap: 20px
+    gap: 10px
 }
 
 
@@ -176,7 +188,7 @@ li {
     li {
         color: white;
         font-size: 20px;
-        margin: 30px;
+        margin: 25px;
     }
 }
 
@@ -189,7 +201,7 @@ li {
     height: calc(900px - 250px);
     position: absolute;
     top: 20%;
-    left: 0%
+    right: 0%
 }
 
 a {
@@ -205,7 +217,7 @@ h1 {
 .btn {
     color: white;
     padding: 20px;
-    border-color: white;
+    border: 2px solid white;
     border-radius: 3rem;
     margin-top: 30px;
 
@@ -231,6 +243,7 @@ h1 {
     position: relative;
     border-bottom: 2px solid white;
     width: 100%;
+    
 }
 
 .text {
