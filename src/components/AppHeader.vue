@@ -85,7 +85,7 @@ export default {
                         <div class="col-4 p-3 logo">
                             <a href="/"><img src="/logo-football.png" alt=""></a>
                         </div>
-                        <div class="col-4 mar-top icons-list">
+                        <div class="col-4 mt-5 icons-list">
                             <ul>
                                 <li><a href="/"><img src="/facebook.png" alt=""> </a></li>
                                 <li><a href="/"><img src="/instagram.png" alt=""></a></li>
