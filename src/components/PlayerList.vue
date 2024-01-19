@@ -20,7 +20,7 @@ export default {
         <div class="container">
           <div class="row">
             <div class="col-12">
-                <h1>PLAYERS</h1>
+                <h1>Players</h1>
             </div>
               <div class="container-cards" >
                   <Players v-for="(Player, index ) in store.players" :key="index" :Player="Player" />
@@ -53,24 +53,26 @@ export default {
 .col-12 {
     text-align: center;
 
-    h1 {
+    h1{
         color: white;
-        margin-top: 30px;
+        margin-top: 50px;
+        font-weight: 800;
+        font-size: 30px;
     }
 }
 
 .btn {
     color: white;
-    padding: 20px;
+    padding: 25px 40px;
     background-color: black;
     border-radius: 3rem;
     margin: 30px 0px;
     border-color: white;
-
+    font-weight: 800;
 }
 
 .btn:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-color: white;
-    color: white;
+    color: rgb(0, 0, 0);
 }</style>

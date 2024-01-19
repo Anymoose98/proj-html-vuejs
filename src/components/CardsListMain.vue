@@ -120,7 +120,6 @@ section {
   font-family: "Satoshi Black", sans-serif;
   overflow: hidden;
 
-
   .slider-btn-container {
     width: 100%;
     display: flex;
