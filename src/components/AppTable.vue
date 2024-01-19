@@ -42,7 +42,7 @@ export default {
                             </tr>
                         </tbody>
                 </table>
-                <button type="button" class="btn btn-dark w-100 py-4">View Full League Table</button>
+                <button type="button" class="btn btn-dark w-100 py-4 my-btn-style">View Full League Table</button>
             </div>
             <!-- FIXTURES & RESULTS TABLE -->
             <div class="col-6">
@@ -96,7 +96,7 @@ export default {
                             </tr>
                         </tbody>
                 </table>
-                <button type="button" class="btn btn-dark w-100 py-4">View Full Fixtures</button>
+                <button type="button" class="btn btn-dark w-100 py-4 my-btn-style">View Full Fixtures</button>
             </div>
             <!-- IMG 20% -->
             <div class="col-12">
@@ -110,9 +110,9 @@ export default {
 <!-- SEZIONE STYLE -->
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
-
 .table-league {
     border: 1px solid lightgray;
+
 }
 
 .table-results, .table-league {
@@ -137,5 +137,13 @@ export default {
 
 .pad-td {
     padding: 10.6px !important;
+}
+
+.my-btn-style{
+    background-color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 700;
 }
 </style>

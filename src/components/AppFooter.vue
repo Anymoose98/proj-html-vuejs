@@ -56,15 +56,12 @@ export default {
       </div>
     </div>
     <div class="col-12 d-flex justify-content-center pt-5">
-      <p class="mb-0">© 2022 Football Club - All Rights Reserved.</p>
+      <p class="mb-0 fs-6">© 2022 Football Club - All Rights Reserved.</p>
     </div>
   </footer>
 </template>
 <style lang ="scss" scoped>
 @use "./../styles/generals.scss" as *;
-
-
-
 
 .sfondo-footer {
   background-image: url("/footer-bg-football.jpg");
@@ -114,7 +111,8 @@ ul{
 }
 
 .bordo-3 {
-  border-radius: 2rem
+  border-radius: 2rem;
+  border: none;
 }
 
 .col-2 {

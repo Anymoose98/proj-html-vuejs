@@ -82,7 +82,7 @@ export default {
               <img src="../../public/reccomanded-icon.svg" alt="" />
               <!-- TODO: aggiungere alt -->
             </div>
-            <h2>Resent New & Articles</h2>
+            <h2 class="title">Resent New & Articles</h2>
             <div class="subtitle">Be aware of the football world.</div>
           </div>
         </div>
@@ -176,10 +176,10 @@ section {
     align-items: center;
     margin-top: 100px;
 
-    h2 {
+    .title {
       font-size: 30px;
       margin-top: 30px;
-      font-weight: 700;
+      font-weight: 800;
 
       .subtitle {
         font-size: 18px;
