@@ -732,6 +732,10 @@ h2 {
       font-family: "Satoshi Black", sans-serif;
       font-weight: 900;
     }
+
+    p{
+      color: black;
+    }
   }
 }
 </style>

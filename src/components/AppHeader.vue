@@ -133,10 +133,10 @@ ul{
     position: relative;
     width: 100%;
     height: 900px;
+
 }
 .largo{
     padding: 20px 50px !important
-
 }
 
 .header-black {
