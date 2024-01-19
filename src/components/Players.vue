@@ -10,21 +10,16 @@ export default {
 };
 </script>
 <template lang="">
-  <div class="col-3 py-5">
-    <div class="img-card testo-all">
-      <div class="img-section">
-        <img class="img-player" :src="Player.image" alt="" />
-      </div>
-
-      <div class="sfondo-nero">
-        <div class="info-player">
-          <h5 class="text-white">{{ Player.number }}</h5>
-          <span>{{ Player.name }}</span> <span> - </span>
-          <span>{{ Player.role }}</span>
-        </div>
-      </div>
-    </div>
-  </div>
+         <div class="col-3 py-5">
+             <div class=" img-card testo-all">
+                 <img :src="Player.image" alt="">
+                 <div class="sfondo-nero">
+                     <h5 class="text-white  ">{{ Player.number }}</h5>
+                     <span>{{ Player.name }}</span> <span> - </span>
+                     <span>{{ Player.role}}</span>
+                 </div>
+             </div>
+         </div>
 </template>
 <style lang="scss" scoped>
 @use "../styles/generals.scss" as *;

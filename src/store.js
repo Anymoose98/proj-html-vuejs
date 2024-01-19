@@ -49,8 +49,16 @@ export const store = reactive({
             image: "/player4.jpg",
             role: "Midfielder",
             number: 15
+        },
+        
+        {
+            name: "Ethan Smith",
+            image: "/player4.jpg",
+            role: "Midfielder",
+            number: 15
         }
     ],
+
     cards: [
         {
             date: "29.95.2022 - Football",
