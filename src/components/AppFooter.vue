@@ -9,14 +9,14 @@ export default {
 }
 </script>
 <template lang="">
-  <div class="sfondo-footer py-5">
-    <div class="container d-flex px-0">
+  <footer class="sfondo-footer py-5 px-0">
+    <div class="container d-flex container-width">
       <div class="col-3 ">
           <ul >
               <li class="mt-0">
                   <img src="/logo-footer-football.png" alt="">
               </li>
-              <li class="text-allineato-img mt-0"> 
+              <li class="text-allineato-img"> 
                   <i class="bi bi-geo-alt h2 pe-2"></i> New Jersey, USA
               </li>
               <li class="text-allineato-img">
@@ -32,11 +32,11 @@ export default {
       </div>
       <div class="col-4 text-white me-5">
           <h3 class="fw-bold pt-4"> Join Our Newsletter</h3>
-          <h6 class="pt-2">Subscribe to be informed about important developments in our club and football world</h6>
+          <p class="pt-2">Subscribe to be informed about important developments in our club and football world</p>
           <input type="text" class="form-control p-4 bordo-3 mt-4" placeholder="Insert your email">
           <button class="btn btn-light form-control mt-1 p-4 bordo-3">Subscribe →</button>
       </div>
-      <div class="col-2 mx-5">
+      <div class="col-2 ms-5">
           <h3 class="fw-bold pt-4">Education</h3>
           <ul class="pt-2">
               <li> FIXTURES & RESULTS</li>
@@ -58,7 +58,7 @@ export default {
     <div class="col-12 d-flex justify-content-center pt-5">
       <p class="mb-0">© 2022 Football Club - All Rights Reserved.</p>
     </div>
-  </div>
+  </footer>
 </template>
 <style lang ="scss" scoped>
 @use "./../styles/generals.scss" as *;
@@ -70,6 +70,10 @@ export default {
   background-image: url("/footer-bg-football.jpg");
   background-color: black;
   color: white;
+
+  .container-width{
+    max-width: 1420px;
+  }
 }
 
 ul{
