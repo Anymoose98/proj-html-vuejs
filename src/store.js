@@ -50,13 +50,6 @@ export const store = reactive({
             role: "Midfielder",
             number: 15
         },
-        
-        {
-            name: "Ethan Smith",
-            image: "/player4.jpg",
-            role: "Midfielder",
-            number: 15
-        }
     ],
 
     cards: [
