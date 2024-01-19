@@ -41,7 +41,7 @@ export default {
   }
 
   &:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
@@ -64,7 +64,7 @@ export default {
       border-radius: 2rem;
       position: absolute;
       top: 0;
-      transition: 0.6s;
+      transition: 0.4s;
     }
   }
 }
@@ -83,7 +83,7 @@ export default {
   align-items: center;
   flex-direction: column;
   font-weight: 800;
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
 
   h5 {
     font-weight: 800;
