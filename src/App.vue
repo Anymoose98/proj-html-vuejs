@@ -99,6 +99,8 @@ body {
     pointer-events: none;
     mix-blend-mode: difference;
     z-index: 1;
+    margin-top: -15px;
+    margin-left: -15px;
 }
 
 .cursor::after {
