@@ -68,7 +68,7 @@ export default {
 </script>
 <template lang="">
 
-    <img :src="slides[activeImage].image" class="sfondo"  alt="Spiderman" />      
+    <img :src="slides[activeImage].image" class="sfondo"  alt="slider" />      
         <div class="container-arrows">
             <div class="prev" @click="prevImg"></div>
             <div class="next" @click="nextImg"></div>         
@@ -272,15 +272,15 @@ h1 {
     border: 2px solid white;
     border-radius: 3rem;
     font-size: 23px;
-    padding: 15px 20px
+    padding: 12px 17px
 
 }
 
 .prev {
-    right: 0%
+    right: 3%
 }
 
 .next {
-    left: 0%
+    left: 3%
 }
 </style>
