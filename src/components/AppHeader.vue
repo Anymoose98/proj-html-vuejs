@@ -167,6 +167,10 @@ i {
     display: flex;
     justify-content: center;
 }
+.largo:hover {
+        background-color: white;
+        color: black
+    }
 
 ul {
     display: flex;
@@ -225,10 +229,7 @@ h1 {
     border-radius: 3rem;
     margin-top: 30px;
 
-    &:hover {
-        background-color: white;
-        color: black
-    }
+   
 }
 
 .btn:hover {
