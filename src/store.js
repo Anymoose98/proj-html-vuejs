@@ -51,7 +51,6 @@ export const store = reactive({
             number: 15
         },
     ],
-
     cards: [
         {
             date: "29.95.2022 - Football",
