@@ -87,9 +87,9 @@ export default {
                         </div>
                         <div class="col-4 mar-top icons-list">
                             <ul>
-                                <li><a href="/"><i class="bi bi-facebook h1"></i></a></li>
-                                <li><a href="/"><i class="bi bi-instagram h1"></i></a></li>
-                                <li><a href="/"><i class="bi bi-twitter h1"></i></a></li>
+                                <li><a href="/"><img src="/facebook.png" alt=""> </a></li>
+                                <li><a href="/"><img src="/instagram.png" alt=""></a></li>
+                                <li><a href="/"><img src="/twitter.png" alt=""></a></li>
                             </ul>     
                         </div>
                         <div class="col-12">
@@ -107,8 +107,8 @@ export default {
                         <h1 class="font-700" >{{ slides[activeImage].title1 }}</h1>
                         <h1 class="font-700 marg-top">{{ slides[activeImage].title2 }}</h1>
                         <h4 class="font-700">{{ slides[activeImage].text }}</h4>
-                        <button class="btn next" @click="nextImg">< </button>
-                        <button class="btn prev" @click="prevImg"> ></button>
+                        <button class="btn next" @click="nextImg"><i class="bi bi-chevron-left"></i> </button>
+                        <button class="btn prev" @click="prevImg"> <i class="bi bi-chevron-right"></i></button>
                         <button class="btn largo font-700">Learn More →</button>
                     </div>
                 </div>
@@ -120,6 +120,11 @@ export default {
 @use "./../styles/generals.scss";
 .font-700{
     font-weight: 700;
+}
+ul{
+    img{
+        width: 40px;
+    }
 }
 .marg-top{
     margin-top: -15px
@@ -153,7 +158,6 @@ i {
     color: white;
     gap: 10px
 }
-
 
 .mar-top{
     margin-top: 40px
@@ -267,7 +271,7 @@ h1 {
     border: 2px solid white;
     border-radius: 3rem;
     font-size: 23px;
-    padding: 10px 20px
+    padding: 15px 20px
 
 }
 
