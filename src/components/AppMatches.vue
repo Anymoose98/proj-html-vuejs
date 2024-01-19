@@ -39,7 +39,7 @@ export default {
         <div class="col-12">
 
             <!-- Titolo -->
-            <h1 class="my-5 white text-center">Upcoming Matchs</h1>
+            <h1 class="my-5 fw-bolder fs-2 white text-center">Upcoming Matchs</h1>
 
             <!-- card -->
             <div v-for="index in 5" :key="index">
