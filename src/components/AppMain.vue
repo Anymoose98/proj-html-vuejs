@@ -10,7 +10,7 @@ export default {
 </script>
 <template lang="">
   <div class="container">
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-5">
             <div class="contenainer-squad1">
                 <h2>Instanbul Sports</h2>
@@ -18,8 +18,8 @@ export default {
 
             </div>
         </div>
-        <div class="col-1 flex-align">
-           <h1>VS</h1>
+        <div class="col-2 flex-align">
+           <div class="scritta-vs mx-4">VS</div>
         </div>
         <div class="col-5">
             <div class="container-squad2">
@@ -55,6 +55,10 @@ export default {
     justify-content: end;
 }
 
+.scritta-vs {
+    font-size: 80px;
+    font-weight: 700;
+}
 
 .container-squad2 {
     display: flex;
