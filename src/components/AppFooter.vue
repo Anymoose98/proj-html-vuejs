@@ -32,7 +32,7 @@ export default {
       </div>
       <div class="col-4 text-white me-5">
           <h3 class="fw-bold pt-4"> Join Our Newsletter</h3>
-          <p class="pt-2">Subscribe to be informed about important developments in our club and football world</p>
+          <p class="pt-2 text-start">Subscribe to be informed about important developments in our club and football world</p>
           <input type="text" class="form-control p-4 bordo-3 mt-4" placeholder="Insert your email">
           <button class="btn btn-light form-control mt-1 p-4 bordo-3">Subscribe →</button>
       </div>
@@ -68,13 +68,13 @@ export default {
   background-color: black;
   color: white;
 
-  .container-width{
+  .container-width {
     max-width: 1420px;
   }
 }
 
-ul{
-    padding-left: 0;
+ul {
+  padding-left: 0;
 }
 
 .col-3 {
@@ -90,7 +90,7 @@ ul{
     padding-bottom: 15px;
   }
 
-  .icon-img{
+  .icon-img {
     border: 1px solid white;
     padding: 5px 20px;
     transition-duration: 0.5s;
