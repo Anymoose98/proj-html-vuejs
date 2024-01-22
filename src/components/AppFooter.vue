@@ -39,19 +39,19 @@ export default {
       <div class="col-2 ms-5">
           <h3 class="fw-bold pt-4">Education</h3>
           <ul class="pt-2">
-              <li> FIXTURES & RESULTS</li>
-              <li> LEAGUE TABLE</li>
-              <li> PLAYERS</li>
-              <li> GALLERY</li>
+              <li> <span>- </span> FIXTURES & RESULTS</li>
+              <li> <span>- </span> LEAGUE TABLE</li>
+              <li> <span>- </span> PLAYERS</li>
+              <li> <span>- </span> GALLERY</li>
           </ul>
       </div>
       <div class="col-2">
           <h3 class="fw-bold pt-4">Quick Links</h3>
           <ul class="pt-2">
-              <li> HOME</li>
-              <li> LEAGUE TABLE</li>
-              <li> PLAYERS</li>
-              <li> GALLERY</li>
+              <li> <span>- </span> HOME</li>
+              <li> <span>- </span> LEAGUE TABLE</li>
+              <li> <span>- </span> PLAYERS</li>
+              <li> <span>- </span> GALLERY</li>
           </ul>
       </div>
     </div>
@@ -117,8 +117,12 @@ ul{
 
 .col-2 {
   li {
-    list-style: '- ';
-    padding-bottom: 7px;
+    list-style: none;
+
+    span{
+      font-weight: 900;
+      font-size: 25px;
+    }
   }
 }
 
